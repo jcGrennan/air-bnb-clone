@@ -1,16 +1,27 @@
-import weightlifting from "../images/alana-grose-weightlifting.jpg"
 import star from "../images/star.png"
 
-export default function Card() {
+export default function Card(props) {
+
+    let badgeText
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
+
     return (
-        <section className="card">
-            <img className="card--photo" src={weightlifting} alt="althetic woman with barbell"/>
+        <div className="card">
+            {
+                badgeText && 
+                <div className="card--badge">{badgeText}</div>
+            }
+            <img className="card--photo" src={props.coverImg} alt={props.alt}/>
             <div className="card--rating">
                 <img src={star} alt="star"/>
-                <p>5.0 <span>(32) · Ireland</span></p>
+                <p>{props.stats.rating} <span>({props.stats.reviewCount}) · {props.location}</span></p>
             </div>
-            <p>Weightlifting with Alana Grose</p>
-            <p><b>from €50</b> / per person</p>
-        </section>
+            <p>{props.title}</p>
+            <p><b>from €{props.price}</b> / per person</p>
+        </div>
     )
 }
