@@ -1,9 +1,13 @@
+// all the images for the card experiences.
 import weightlifting from "./images/alana-grose-weightlifting.jpg"
 import painting from "./images/adi-ware-painting.jpg"
 import cello from "./images/andy-zampf-cello.jpg"
 import animalCare from "./images/sehan-cybil-animal-care.jpg"
 import graphicDesign from "./images/bill-ketters-graphic-design.jpg"
 
+/* exporting the card data. Normally this would be pulled from a database in JSON format.
+For the sake of this exercise I created a file and put the data into objects contained within an array,
+similar to JSON so that I could map the data onto my reusuable card component.*/
 export default [
     {
         id: 1,

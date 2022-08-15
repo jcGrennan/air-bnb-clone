@@ -1,3 +1,4 @@
+// importing the grid image which was designed elsewhere.
 import grid from "../images/airbnb-grid.png"
 
 export default function Hero() {
