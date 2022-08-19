@@ -1,5 +1,8 @@
 // importing the grid image which was designed elsewhere.
+
 import grid from "../images/airbnb-grid.png"
+
+// composing and exporting the Hero component. Very small but composed separately for practice
 
 export default function Hero() {
     return (
