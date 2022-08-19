@@ -11,22 +11,28 @@ export default function App() {
   
   const cards = data.map(item => {
     return (
+
       <Card
         key={item.id}
         {...item}
       />
+
     )
   })        
 
   // composing the app
 
   return (
+
     <div>
+
       <Navbar />
       <Hero />
+
       <section className="cards-list">
         {cards}
       </section>
+      
     </div>
   );
 }
