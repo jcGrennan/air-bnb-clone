@@ -1,4 +1,4 @@
-/* simple design for phone screen so does not scale to pc fullscreen*/
+/* simple design for phone screen so does not scale to pc fullscreen. Designed in accordance to a a Figma file.*/
 
 * {
     box-sizing: border-box;
@@ -50,6 +50,7 @@ section {
     line-height: 110%;
 }
 
+/* used flex-box to style the card component */
 
 .card {
     font-size: 12px;
@@ -70,6 +71,8 @@ section {
     border-radius: 9px;
 }
 
+/* used flex-box to align the star on the rating */
+
 .card--rating {
     display: flex;
     align-items: center;
@@ -87,12 +90,16 @@ section {
     color: #918E9B;
 }
 
+/* used flex-box to make the cards a scrollable list */
+
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
     overflow-x: auto;
 }
+
+/* used positon to place the badges onto the cards */
 
 .card--badge {
     position: absolute;
