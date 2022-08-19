@@ -16,6 +16,8 @@ function App() {
       )
   })        
 
+  // composing the app
+
   return (
     <div>
       <Navbar />
