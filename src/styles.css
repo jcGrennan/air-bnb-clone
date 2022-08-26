@@ -51,7 +51,6 @@ section {
 }
 
 /* used flex-box to style the card component */
-
 .card {
     font-size: 12px;
     line-height: 110%;
@@ -72,7 +71,6 @@ section {
 }
 
 /* used flex-box to align the star on the rating */
-
 .card--rating {
     display: flex;
     align-items: center;
@@ -91,7 +89,6 @@ section {
 }
 
 /* used flex-box to make the cards a scrollable list */
-
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
@@ -100,7 +97,6 @@ section {
 }
 
 /* used positon to place the badges onto the cards */
-
 .card--badge {
     position: absolute;
     top: 6px;
